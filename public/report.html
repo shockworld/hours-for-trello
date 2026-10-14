@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/styles.css"><title>Hours report</title></head><body class="embedded">
+<main class="report-panel"><form id="filters" class="filters"><label>From<input type="date" id="from" required></label>
+<label>To<input type="date" id="to" required></label><button type="submit">Show report</button></form>
+<div class="report-summary"><div><span>Total work time</span><h1 id="total">—</h1></div><span id="card-count">— cards</span></div>
+<p id="feedback" class="feedback" role="status"></p><div class="table-scroll"><table><thead><tr><th>Card / entries</th><th class="numeric">Hours</th></tr></thead><tbody id="rows"></tbody></table></div>
+<p class="muted">Hours are included according to the work date, including archived cards. Select a card's entries for a breakdown.</p></main>
+<script src="https://p.trellocdn.com/power-up.min.js"></script><script type="module" src="/js/report.js"></script></body></html>

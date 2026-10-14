@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/styles.css"><title>Work hours</title></head><body class="embedded">
+<main class="card-panel"><div class="heading"><strong>Time logged</strong><strong id="total">—</strong></div>
+<p id="feedback" class="feedback" role="status"></p>
+<p id="empty" class="muted" hidden>No work hours logged yet.</p><ul id="logs" class="log-list"></ul>
+<form id="log-form" hidden><h3>Register work hours</h3>
+<div class="fields"><label>Date<input required type="date" id="date"></label>
+<label>Hours<input required type="number" id="hours" min="0" max="24" step="1" value="1"></label>
+<label>Minutes<input required type="number" id="minutes" min="0" max="59" step="1" value="0"></label></div>
+<label>Description<textarea required id="description" rows="2" maxlength="500" placeholder="What was done?"></textarea></label>
+<div class="actions"><button type="submit">Add work hours</button><button id="cancel" type="button" class="secondary" hidden>Cancel</button></div></form>
+</main><script src="https://p.trellocdn.com/power-up.min.js"></script><script type="module" src="/js/card.js"></script></body></html>

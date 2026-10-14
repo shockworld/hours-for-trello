@@ -1,0 +1,13 @@
+{
+  "name": "hours-for-trello",
+  "version": "0.1.0",
+  "description": "Work logs and monthly card reports for Trello",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=22.13.0" },
+  "scripts": {
+    "start": "node src/index.mjs",
+    "test": "node --test",
+    "check": "node --check src/app.mjs && node --check src/auth.mjs && node --check src/db.mjs && node --check src/trello.mjs && node --check public/js/power-up.js && node --check public/js/card.js && node --check public/js/report.js"
+  }
+}
